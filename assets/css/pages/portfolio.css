@@ -49,14 +49,12 @@
 
 .portfolio-card .card-banner {
   position: relative;
-  border: 2px solid var(--jet);
-  box-shadow: 0 0 0 var(--jet);
+  /* border: 2px solid var(--jet);  
+  box-shadow: 0 0 0 var(--jet);*/
   transition: var(--transition-1);
 }
 
-.portfolio-card .card-banner:is(:hover, :focus-within) {
-  box-shadow: 3px 3px 0 var(--jet);
-}
+
 
 .portfolio-card .btn-icon {
   position: absolute;
