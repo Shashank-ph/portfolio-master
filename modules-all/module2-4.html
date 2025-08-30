@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Shashank | Module 1</title>
+  <meta name="title" content="Shashank | Services">
+  <meta name="description" content="This is a personal portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/require.css">
+  <link rel="stylesheet" href="../assets/css/pages/service.css">
+
+  <style>
+    #more {
+      display: none;
+    }
+
+    #more1 {
+      display: none;
+    }
+
+    #more2 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/SP-logo.png" width="200" height="50"
+          alt="https://www.linkedin.com/in/shashank-phatak-26122b145/">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../service.html" class="label-lg navbar-link has-after">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../modules.html" class="label-lg navbar-link has-after">Modules</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../portfolio.html" class="label-lg navbar-link has-after">Certificates</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../contact.html" class="label-lg navbar-link has-after">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="../contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service has-bg-image" aria-labelledby="service-label"
+        style="background-image: url('../assets/images/service-bg.png')">
+        <div class="container">
+
+          <h2 class="section-title headline-md text-center" id="service-label">Collaborative Discussion 2</h2>
+
+          <ul class="service-list">
+
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(178, 30%, 69%)">
+
+                <div>
+                  <h3 class="card-title title-sm">Initial Post</h3>
+
+                  <p class="body-sm">
+
+                    <b>The Pros and cons of logging – The impact of log4j</b><br>
+
+                    Logging is a critical tool in cybersecurity, enabling threat detection, forensic investigations, and
+                    compliance monitoring. According to Berger (2021), effective logging enhances an organisation's
+                    ability to detect anomalies and mitigate security incidents. However, it also presents challenges,
+                    including data volume, retention conflicts with privacy regulations, and ensuring log integrity
+                    through measures like hashing and encryption.<span id="dots"></span>
+                    <span id="more">
+
+                      Moreover, logging mechanisms themselves can be exploited. Log injection attacks, where attackers
+                      embed malicious payloads into logs, can compromise analysis systems. Log tampering where
+                      adversaries alter or delete logs can also discover malicious activities. Ekelhart et al. (2019)
+                      emphasise the risks of sensitive data exfiltration due to misconfigured logging, highlighting the
+                      importance of sanitisation.
+                      Organisations should adopt secure logging practices to mitigate these risks, including encryption,
+                      access control, and anomaly detection systems. Centralised logging with tools like Splunk, Azure
+                      Sentinel, ManageEngine from Security Information and Event Management (SIEM) portfolio, Email
+                      Security and ticket login systems such as Jira enhance analysis. At the same time, redundant
+                      storage safeguards the organisations against tampering. Regular audits ensure the integrity of log
+                      management practices.
+                      Logging introduces potential vulnerabilities, and yet, these can be managed effectively, ensuring
+                      logs remain a powerful tool for security analysis while minimising associated risks. Balancing
+                      robust implementation with risk management is essential to maximising their defensive
+                      value.<br><br>
+                      <b>References</b><br>
+                      • Berger, A. (2021). Security Logging and Monitoring: A Practical Guide.<br>
+                      • Ekelhart, A., Fenz, S., & Neubauer, T. (2019). Security Analysis and Management: Logging as a
+                      Security Tool.<br>
+                      • Chuvakin, A., Schmidt, K., & Phillips, C. (2020). Logging for Forensics: Best Practices for SIEM
+                      Integration.<br>
+                      • Zaman, S., Khan, A., & Patel, R. (2024). Advanced Techniques for Detecting and Mitigating
+                      Log-Based Cyber Threats. Journal of Cybersecurity Research, 18(3), pp. 45-60.<br>
+                      • Kumar, R., Gupta, P., and Sharma, A. (2021). 'Log management tools: A comparative analysis for
+                      effective security monitoring', International Journal of Cybersecurity and Applications, 15(2),
+                      pp. 101-115.<br><br>
+
+                    </span>
+                  </p>
+                  <button onclick="myFunction()" id="myBtn"><b>Read more</b></button>
+            </li>
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(125, 47%, 63%)">
+
+                <div>
+                  <h3 class="card-title title-sm">Peer Responses</h3>
+
+                  <p class="body-sm">
+                    <b>Peer Response for John Heart Ojabo</b><br>
+                    Hi John, you have written a very good post. The vulnerabilities highlighted by incidents like
+                    Log4Shell underscore the need for strong measures to protect logging systems while maintaining their
+                    vital role in cybersecurity. Although logging is crucial for monitoring and threat detection, it can
+                    present significant risks if not properly secured..<span id="dots1"></span>
+                    <span id="more1">
+                      One key measure is effective dependency management. As Berger (2023) notes, Log4Shell revealed the
+                      dangers of third-party libraries. Regular audits using tools like OWASP Dependency-Check can help
+                      identify vulnerabilities, while timely patch management reduces the risk of exploitation (Spring,
+                      2022).
+                      Securing log data is also critical. Encrypting logs in transit and at rest prevents unauthorised
+                      access, and role-based access control (RBAC) restricts access to sensitive logs. Automated anomaly
+                      detection systems can identify suspicious activities in real-time (Newman et al., 2020).
+                      Centralized log management platforms, such as Splunk or ManageEngine, enhance visibility and
+                      provide integrated analytics and threat detection, mitigating unauthorized access risks. While
+                      traditional logging approaches offer advanced threat detection, their implementation can be
+                      challenging for smaller organisations (Svacina et al., 2020).
+                      Regular third-party audits and penetration testing are essential for identifying vulnerabilities
+                      before they can be exploited. By integrating these measures, organisations can effectively
+                      mitigate logging vulnerabilities while reaping cybersecurity benefits (Zajeganović et al.,
+                      2022).<br><br>
+
+                      <b>References</b><br>
+                      • Berger, A.(2023). What is Log4Shell? The Log4j vulnerability explained (and what to do about
+                      it).
+                      Available at: https://www.dynatrace.com/news/blog/what-is-log4shell/ [Accessed 27 November
+                      2024].<br>
+                      • Spring, J. (2022). 'Supply chain vulnerabilities and dependency risks in software security', ACM
+                      Computing Surveys, 54(6), pp. 1-34.<br>
+                      • Newman, K., Patel, R., and Singh, A. (2020). ‘Encryption practices for log data security’,
+                      Journal of Information Security, 11(2), pp. 101-113.<br>
+                      • Svacina, J. et al. (2020) ‘On Vulnerability and Security Log analysis: A Systematic Literature
+                      Review on Recent Trends’, in Proceedings of the International Conference on Research in Adaptive
+                      and Convergent Systems. RACS ’20: International Conference on Research in Adaptive and Convergent
+                      Systems, Gwangju Republic of Korea: ACM, pp. 175–180. Available at:
+                      https://doi.org/10.1145/3400286.3418261.<br>
+                      • Zajeganović, M. et al. (2022) ‘An Approach to Improving Network Security Using Log Analysis’,
+                      in Sixth International Scientific Conference ITEMA Recent Advances in Information Technology,
+                      Tourism, Economics, Management and Agriculture, pp. 105–111. Available at:
+                      https://doi.org/10.31410/ITEMA.2022.105.<br><br>
+
+                      <b>Peer Response for Ketan</b><br>
+                      Ketan, your post adeptly captures the critical role of logging in cybersecurity while highlighting
+                      its dual nature as both, a powerful asset and a potential liability. Your emphasis on Security
+                      Information and Event Management (SIEM) systems is particularly insightful. Tools like these
+                      consolidate log data and enhance threat detection and response capabilities, aligning with
+                      Chuvakin et al.'s (2020) perspective on their transformative impact. However, I believe there is
+                      room to explore the practical challenges of implementing secure logging mechanisms.
+                      For instance, while encryption and access controls are indispensable, they often introduce
+                      operational complexities, particularly during high-stakes investigations where rapid log retrieval
+                      is crucial. Krutz and Vines (2021) note that organisations frequently face difficulties in
+                      balancing the need for robust security measures with maintaining system performance and
+                      efficiency. A discussion on mitigating these challenges, such as employing lightweight encryption
+                      algorithms or optimising access protocols would be worth a discussion.
+                      Your acknowledgement of ethical and legal concerns, including GDPR compliance, is also helpful.
+                      Incorporating techniques such as log anonymisation or pseudonymization, as suggested by Newman et
+                      al. (2020), could illustrate how organisations can navigate privacy regulations without
+                      compromising the utility of their logging practices.
+                      Finally, your reference to Log4Shell is an excellent example that underscores the critical risks
+                      associated with insecure logging systems (Berger 2023). It highlights the need for a proactive
+                      approach, including regular patch management and the adoption of runtime application
+                      self-protection (RASP) tools, as emphasised by Zaman et al. (2024). Your post offers a balanced
+                      and thought-provoking analysis of logging's role in cybersecurity, encouraging constructive
+                      discourse on mitigating vulnerabilities.<br><br>
+
+                      <b>References</b><br>
+                      • Berger, A. (2023) What is Log4Shell? the LOG4J vulnerability explained (and what to do about
+                      it), Dynatrace news. Available at: https://www.dynatrace.com/news/blog/what-is-log4shell/
+                      • Chuvakin, A., Schmidt, K., & Phillips, C. (2020). Logging for Forensics: Best Practices for SIEM
+                      Integration.<br>
+                      • Krutz, R. L., & Vines, R. D. (2021). Security Strategies in Windows Platforms and
+                      Applications.<br>
+                      • Newman, K., Patel, R., & Singh, A. (2020). ‘Encryption practices for log data security’, Journal
+                      of Information Security, 11(2), pp. 101–113<br>
+                      • Zaman, S., Khan, A., & Patel, R. (2024). Advanced Techniques for Detecting and Mitigating
+                      Log-Based Cyber Threats. Journal of Cybersecurity Research, 18(3), pp. 45-60.<br>
+
+                    </span>
+                  </p>
+                  <button onclick="myFunction1()" id="myBtn1"><b>Read more</b></button>
+                </div>
+
+              </div>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; 2025 copyright all right reserved</p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
+    function myFunction1() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "Read more";
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "Read less";
+        moreText1.style.display = "inline";
+      }
+    }
+
+    function myFunction2() {
+      var dots2 = document.getElementById("dots2");
+      var moreText2 = document.getElementById("more2");
+      var btnText2 = document.getElementById("myBtn2");
+
+      if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText2.innerHTML = "Read more";
+        moreText2.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText2.innerHTML = "Read less";
+        moreText2.style.display = "inline";
+      }
+    }
+  </script>
+</body>
+
+</html>

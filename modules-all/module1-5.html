@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Shashank | Module 1</title>
+  <meta name="title" content="Shashank | Services">
+  <meta name="description" content="This is a personal portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/require.css">
+  <link rel="stylesheet" href="../assets/css/pages/service.css">
+
+  <style>
+    #more {
+      display: none;
+    }
+
+    #more1 {
+      display: none;
+    }
+
+    #more2 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/SP-logo.png" width="200" height="50"
+          alt="https://www.linkedin.com/in/shashank-phatak-26122b145/">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../service.html" class="label-lg navbar-link has-after">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../modules.html" class="label-lg navbar-link has-after active">Modules</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../portfolio.html" class="label-lg navbar-link has-after">Certificates</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../contact.html" class="label-lg navbar-link has-after">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="../contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service has-bg-image" aria-labelledby="service-label"
+        style="background-image: url('../assets/images/service-bg.png')">
+        <div class="container">
+
+          <h2 class="section-title headline-md text-center" id="service-label">Unit 10 - Programming Outline</h2>
+
+          <ul class="service-list">
+
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(178, 30%, 69%)">
+
+                <div>
+                  <h3 class="card-title title-sm">Initial Post</h3>
+
+                  <p class="body-sm">
+
+                    <b>Zero Trust Technology and Anti-Malware software.Safeguarding our systems and networks is crucial
+                      given the growing complexity of cyber threats.</b><br>
+
+                    1. Introduction
+                    The goal of this assignment is to develop a simple Python-based solution that integrates Zero
+                    Trust Access Control and Anti-Malware mechanisms to enhance the security of an online shopping
+                    system as presented in Unit 9 previously.
+
+                    2. Security Threats Addressed
+
+                    A. Unauthorized Access:
+                    o The Zero Trust Access Control mechanism ensures that only users with valid authentication tokens
+                    can access the system, minimizing the risk of unauthorized access.
+                    o Specific User roles are used to restrict access to certain parts of the system (e.g., admin
+                    panel, customer).
+
+                    B. Malware Infiltration:
+                    o The Anti-Malware scanner inspects files for known malicious patterns or signatures, preventing
+                    the upload or execution of infected files within the system.
+
+                    3. Libraries and Tool Environment
+                    A. Standard Python Libraries:
+                    o The solution does not rely on any external libraries, focusing on using only default Python
+                    libraries for simplicity and portability.
+                    o If required, potential libraries can be included in future such as:
+                     os and sys: For file operations and handling environment variables.
+                     hashlib: For implementing more secure authentication tokens using hashing.
+                    B. Development Environment:
+                    o Python 3.12.4 version
+                    o Virtual Studio Code & Jupyter Notebook
+                    o Command line or terminal for running the Python script.
+                    4. Solution Design
+                    A. Zero Trust Technology - Access Control:
+                    o Class Design: The Zero Trust Access Control class shall manage authentication and authorization.
+                     Authentication: Verifies if the user has a valid token before allowing them to proceed.
+                     Authorization: Checks if authenticated users have permission to access requested resources based
+                    on predefined user roles.
+                    B. Anti-Malware Mechanism:
+                    o Class Design: The Malware Scanner class shall scan files for known malware signatures.
+                     Signature Detection: Compares the contents of files to a list of known malware patterns and alerts
+                    if malware is detected.
+                    5. Test Plan
+                    1. Objective:
+                    o To validate the effectiveness of the Zero Trust and Anti-Malware solutions by running a series of
+                    tests that simulate typical usage scenarios and potential security threats.
+                    2. Testing Scenarios:
+                    o Zero Trust Access Control Testing:
+                    1. Test Case 1: Attempt to authenticate a user with correct credentials.
+                     Expected Outcome: User is successfully authenticated.
+                    2. Test Case 2: Attempt to authenticate a user with incorrect credentials.
+                     Expected Outcome: Authentication fails.
+                    3. Test Case 3: Authenticate a user and check authorization to access permitted resources.
+                     Expected Outcome: Access is granted.
+                    4. Test Case 4: Authenticate a user and attempt to access restricted resources.
+                     Expected Outcome: Access is denied.
+                    o Anti-Malware Scanner Testing:
+                    1. Test Case 5: Scan a clean file that does not contain any malware signatures.
+                     Expected Outcome: "File is clean" message is displayed.
+                    2. Test Case 6: Scan a file that contains a known malware signature.
+                     Expected Outcome: "Malware detected !" message is displayed.
+                    3. Test Execution:
+                    o Using Visual Code output terminal to display results of each test.
+                    o Record screenshots of the output to demonstrate the success or failure of each test scenario.
+                    6. Expected Output
+                    • Upon successful implementation and testing:
+                    o Users with valid credentials will be able to access only the resources they are permitted to use.
+                    o Any attempt to upload or execute a file with a known malware pattern will be flagged by the
+                    Anti-Malware system.
+                    o The solution should also demonstrate the ability to dynamically update malware definitions.
+                    7. Documentation
+                    1. README File:
+                    o Brief description of the implemented solution.
+                    o Step-by-step guide on how to set up, run, and test the program.
+                    o Other external sources or references used for the implementation (if any).
+                    2. Source Code File/s:
+                    o Code file used to write and execute the program.
+                    o Explanation of key functions written in the source code itself.
+                    3. Screenshots:
+                    o Expected output images of Zero Trust Technology & Anti-Malware Model as mentioned in above test
+                    cases.
+
+                    8. Conclusion
+                    The implemented solution provides a basic yet effective approach in applying Zero Trust principles
+                    and malware detection to enhance security of an online grocery store environment.
+
+                  </p>
+
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; 2025 copyright all right reserved</p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
+    function myFunction1() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "Read more";
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "Read less";
+        moreText1.style.display = "inline";
+      }
+    }
+
+    function myFunction2() {
+      var dots2 = document.getElementById("dots2");
+      var moreText2 = document.getElementById("more2");
+      var btnText2 = document.getElementById("myBtn2");
+
+      if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText2.innerHTML = "Read more";
+        moreText2.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText2.innerHTML = "Read less";
+        moreText2.style.display = "inline";
+      }
+    }
+  </script>
+</body>
+
+</html>
