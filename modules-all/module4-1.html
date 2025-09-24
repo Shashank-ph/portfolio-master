@@ -123,8 +123,7 @@
         style="background-image: url('../assets/images/service-bg.png')">
         <div class="container">
 
-          <h2 class="section-title headline-md text-center" id="service-label">Vulnerability Analysis – Literature
-            Review Activity</h2>
+          <h2 class="section-title headline-md text-center" id="service-label">Unit 3 - Team Activity: Discussion</h2>
 
           <ul class="service-list">
 
@@ -132,64 +131,61 @@
               <div class="card card-md" style="background-color: hsl(178, 30%, 69%)">
 
                 <div>
-                  <h3 class="card-title title-sm">Gin & Juice Shop Website Vulnerabilities</h3>
+                  <p class="body-sm"><br>
 
-                  <p class="body-sm">
+                    <b>What is a Secure Programming Language?</b><br>
+                    A secure programming language is designed to minimize vulnerabilities and reduce the risk of
+                    introducing security flaws during software development. Such languages integrate features that
+                    enforce memory and type safety, encourage structured and modular code, and restrict unsafe
+                    operations. Buelta (2022) explains that secure languages aim to eliminate entire classes of
+                    vulnerabilities by design - such as buffer overflows, dangling pointers, and memory leaks—by using
+                    safety mechanisms like garbage collection, strong typing, and sandboxing. Similarly, Cifuentes and
+                    Bierman (2019) stress that secure languages prevent undefined behaviors and encourage safe coding
+                    practices through language semantics and compiler checks.<br><br>
+                    <b>1. What Factors Determine Whether a Language is Secure?</b><br>
+                    Key factors include:<br>
+                    • Memory Safety: Prevents memory-related errors such as buffer overflows or use-after-free
+                    vulnerabilities (Buelta, 2022).<br>
+                    • Type Safety: Ensures data is used according to its defined type, minimizing unintended behavior
+                    (Cifuentes & Bierman, 2019).<br>
+                    • Automatic Memory Management: Languages like Python and Java prevent manual memory handling errors
+                    through garbage collection.<br>
+                    • Encapsulation and Access Control: Restricts direct access to object internals, promoting modular
+                    design (Russinovich et al., 2021).<br>
+                    • Compiler and Runtime Checks: Identify errors at compile-time or runtime, reducing exploitable
+                    bugs.<br><br>
+                    <b>2. Could Python Be Classed as a Secure Language?</b><br>
+                    Python is widely regarded as a relatively secure language for general-purpose and application-level
+                    programming. It offers automatic memory management, type checking, and high-level abstractions that
+                    reduce low-level errors (van Rossum & Drake, 2009). Its design minimizes common vulnerabilities seen
+                    in languages like C, such as manual memory management errors. However, Python is not immune to
+                    security flaws. Its dynamic typing can lead to runtime type errors, and it is still vulnerable to
+                    injection attacks and insecure library usage if best practices are not followed (Chouhan & Sinha,
+                    2020). Therefore, while Python facilitates safer programming, true security depends on proper
+                    implementation.<br><br>
+                    <b>3. Is Python Better Than C for OS Development?</b><br>
+                    Despite Python’s safety and developer-friendly features, it is unsuitable for operating system (OS)
+                    development. C is closer to hardware and allows for fine-grained memory and performance control,
+                    which is crucial in OS kernels and system drivers (Silberschatz et al., 2018). Python, being
+                    interpreted and abstracted from the hardware layer, introduces runtime overhead and lacks the
+                    necessary low-level access. As a result, while Python might be safer, C remains the standard for OS
+                    development due to its control, efficiency, and portability.<br><br>
 
-                    1. Personal Addresses and other details are visible for all previous orders – GDPR concerns<br>
-                    2. Coupon code visible even without registering by valid email id - 9In&JUICE5H0P<br>
-                    3. Possible to check available stocks without logging in.<br>
-                    4. Possible to view username and password in cleartext. (Username : carlos Password : hunter2)<br>
-                    5. Unable to process / complete order as the user is flagged for deletion<br>
-                    <br>
-                    <img src="C:\Users\Shashank\Desktop\EPort\portfoli-master\assets\images\Shopping cart.png"
-                      alt="Sample Image">
-                    <br>
-                    <span id="dots"></span>
-                    <span id="more">
 
-                      6. PCI DSS concerns: As we can login with admin account and can view order details as well as
-                      payment (Debit Card) details.
-                      <br><br>
-                      <img src="C:\Users\Shashank\Desktop\EPort\portfoli-master\assets\images\Order details.png"
-                        alt="Sample Image"><br>
-                      <b>Issues or challenges</b><br><br>
-                      1. Unable to pinpoint the vulnerability and the CVE id. Example : Buffer overflow has 13 examples
-                      all belonging to different vulnerabilities and information.
-                      <b>Solution :</b> Search manually on NVD website (NVD - Search and Statistics) to know more about
-                      applicable vulnerabilities.<br><br>
-
-                      2. NVD linkage of vulnerabilities not given on Gin & Juice website. Had to research manually.
-
-                      <b>Solution :</b> Run the search manually and with reference to other exploits available on the
-                      internet
-                      /
-                      youtube and then run those in order to find expected vulnerable results.
-                      <br><br>
-                      <img src="C:\Users\Shashank\Desktop\EPort\portfoli-master\assets\images\NVD_linkage.png"
-                        alt="Sample Image">
-                      <br>
-
-                      3. Some of the exploits as given in the website /vulnerabilities tab didn’t work. Example :
-                      robots.txt gave 404 error. Hence it is difficult to rely completely on the vulnerability / bug
-                      list
-                      provided by Port Swigger.
-                      <b>Solution :</b> Do not completely rely on the results provided by automated tools, manual
-                      intervention
-                      is
-                      required as well.<br><br>
-
-                      <b>Suggested tools for Audit :</b><br>
-                      1. Burpsuite<br>
-                      2. Metasploit<br>
-                      3. Nessus<br>
-                      4. Nmap<br>
-                      5. Hydra<br>
-                      6. Owasp ZAP <br><br>
-                  </p>
-                  </span>
-                  <button onclick="myFunction()" id="myBtn"><b>Read more</b></button>
-
+                    <b>References:</b><br>
+                    • Buelta, P. (2022). Security Engineering with Patterns: Origins, Theoretical Models, and New
+                    Applications. Springer.<br>
+                    • Cifuentes, C., & Bierman, G. (2019). Secure Programming Languages: Design, Analysis, and
+                    Implementation. ACM Computing Surveys, 51(6), Article 127. https://doi.org/10.1145/3280989<br>
+                    • van Rossum, G., & Drake, F. L. (2009). The Python Language Reference Manual (Release 3.0.1).
+                    Python Software Foundation.<br>
+                    • Russinovich, M., Solomon, D. A., & Ionescu, A. (2021). Windows Internals, Part 1 (7th ed.).
+                    Microsoft Press.<br>
+                    • Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). Operating System Concepts (10th ed.).
+                    Wiley.<br>
+                    • Chouhan, S., & Sinha, A. (2020). Security Vulnerabilities in Python Applications: A Review.
+                    International Journal of Computer Applications, 176(8), 25–29.
+                    https://doi.org/10.5120/ijca2020920179<br>
 
             </li>
 

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Shashank | Module 1</title>
+  <meta name="title" content="Shashank | Services">
+  <meta name="description" content="This is a personal portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/require.css">
+  <link rel="stylesheet" href="../assets/css/pages/service.css">
+
+  <style>
+    #more {
+      display: none;
+    }
+
+    #more1 {
+      display: none;
+    }
+
+    #more2 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/SP-logo.png" width="200" height="50"
+          alt="https://www.linkedin.com/in/shashank-phatak-26122b145/">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../service.html" class="label-lg navbar-link has-after">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../modules.html" class="label-lg navbar-link has-after">Modules</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../portfolio.html" class="label-lg navbar-link has-after">Certificates</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../contact.html" class="label-lg navbar-link has-after">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="../contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service has-bg-image" aria-labelledby="service-label"
+        style="background-image: url('../assets/images/service-bg.png')">
+        <div class="container">
+
+          <h2 class="section-title headline-md text-center" id="service-label">Development Team Project: Design Document
+          </h2>
+
+          <ul class="service-list">
+
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(178, 30%, 69%)">
+
+                <div>
+                  <p class="body-sm"><br>
+
+                    <b>Secure Music Copyright Management Application – Design</b><br><br>
+
+                    <b>Proposal</b><br>
+
+                    <b>1. Introduction</b><br>
+                    This proposal outlines the design for a secure digital platform tailored to manage music
+                    copyright artefacts, addressing ongoing challenges in the music industry. The application
+                    enables users to securely upload, store, and manage digital content, including lyrics,
+                    scores, and audio files. The architecture employs object-oriented design principles,
+                    adheres to secure software engineering practices, and complies with standards from
+                    ISO/IEC 27000 and the NIST Cybersecurity Framework.<br><br>
+
+                    <b>2. System Overview</b><br>
+                    The application serves as a secure repository for copyright owners and artists. It ensures
+                    that uploaded artefacts undergo integrity verification via cryptographic hashing, are
+                    encrypted with AES-256 encryption for storage, and are timestamped to document
+                    ownership and modifications. Users have controlled access to their artefacts, while
+                    administrators maintain system-wide authority.<br><br>
+
+                    <b>3. UML Design Diagrams</b><br>
+
+                    <b>Use Case Diagram</b><br>
+                    The use case diagram illustrates the interaction between the User and Admin actors
+                    and the system. Users can upload, verify, modify, decrypt, and view artefacts. Admins
+                    inherit these actions and additionally manage deletion and artefact creation. Key security
+                    actions such as checksum verification are embedded within upload routines to automate
+                    integrity checks, as encouraged by secure agile development practices (Sharma & Bawa,
+                    2020).<br><br>
+
+                    <b>Class Diagram</b><br>
+                    The class diagram demonstrates a modular architecture. The central MusicApp
+                    controller manages artefact operations with support from:
+                    • ChecksumService for SHA-256 verification,<br>
+                    • EncryptionService for AES-256 encryption,<br>
+                    • TimeStampService for audit tracking.<br>
+
+                    Classes exhibit strong object-oriented principles, including inheritance (Admin extends
+                    User) and composition (MusicApp utilises service classes), which are consistent with the
+                    abstraction patterns outlined in Buelta (2022, Chapter 6).<br><br>
+
+                    <b>Sequence Diagram</b><br>
+                    The sequence diagram models a typical upload sequence. A user triggers the artefact
+                    upload, prompting checksum generation, encryption, timestamping, and database
+                    storage. Both Admin and User actors follow this sequence, highlighting shared
+                    functionality and reusability, a core tenet of object-oriented design (Cifuentes & Bierman,
+                    2019).<br><br>
+
+                    <b>4. Data and Application Design</b><br>
+                    The relational database schema includes:<br>
+                    • Users: UserID, Name, Role, Email, PasswordHash<br>
+                    • Artefacts:ArtefactID, UserID, TimestampCreated, TimestampModified Title.<br>
+                    • Logs: LogID, ActionType, ActorID, Timestamp,EncryptedData, Checksum.<br>
+
+                    Artefacts are stored in encrypted format, maintaining ownership through user linkage.
+                    Checksum and timestamp fields assure integrity and provenance. The application
+                    supports API-based access layered through secure RESTful endpoints and role-based
+                    authorisation, in line with best practices in microservices and API security design (Buelta,
+                    2022; Velepucha & Flores, 2023).<br><br>
+
+                    <b>5. Security and Design Patterns</b><br>
+
+                    <b>Security controls include:</b><br>
+                    • AES-256 encryption for artefact protection,<br>
+                    • SHA-256 hashing for integrity verification,<br>
+                    • Timestamping using cryptographically secure sources,<br>
+                    • Role-based access to isolate privileges.<br><br>
+
+                    <b>Design patterns implemented:</b><br>
+                    • Singleton for database connection handling,<br>
+                    • Factory pattern for artefact object instantiation,<br>
+                    • Strategy pattern to encapsulate encryption and checksum logic.<br>
+                    These architectural approaches align with the secure development patterns
+                    recommended in ISO/IEC 27000 (2018) and the NIST Cybersecurity Framework (2020).<br><br>
+
+                    <b>6. Object-Oriented and Agile Principles</b><br>
+                    • Encapsulation: Sensitive data is accessed via controlled interfaces.<br>
+                    • Inheritance: Promotes reusability and logical role hierarchy.<br>
+                    • Abstraction: Key services are modular and testable.<br>
+                    • Agility: Iterative development aligns with secure agile models (Sharma & Bawa,
+                    2020), ensuring security is embedded from the outset.<br><br>
+
+                    <b>7. Conclusion</b><br>
+                    This design provides a secure and scalable solution to music copyright management. By
+                    leveraging object-oriented architecture, UML modelling, and safe design principles, it
+                    ensures content protection, legal traceability, and operational transparency. The
+                    architecture is future-proofed for modular enhancements and extensibility across roles
+                    and content types.<br><br>
+
+                    <b>8. Future Enhancements</b><br>
+                    To support long-term scalability and industry adaptation, the application can be
+                    extended to include blockchain integration for immutable artefact records and smart
+                    contracts for automated licensing. AI-based fingerprinting of audio files could further aid
+                    copyright enforcement by detecting duplicates across platforms. Additionally, the
+                    platform can evolve to support version control, enabling users to track creative progress
+                    and revert changes.<br><br>
+
+                    <b>References</b><br>
+                    • Buelta, J. (2022) Python Architecture Patterns. Packt Publishing Ltd.<br>
+                    • Velepucha, V. and Flores, P. (2023) ‘A Survey on Microservices Architecture:
+                    Principles, Patterns and Migration Challenges’, IEEE Access, 11, pp. 88339–88358.<br>
+                    • ISO/IEC (2018) ISO/IEC Standard 27000 Section 3.<br>
+                    • National Institute of Standards and Technology (2020) Cybersecurity Framework.<br>
+                    • Sharma, A. and Bawa, R. K. (2020) ‘Identification and Integration of Security
+                    Activities for Secure Agile Development’, International Journal of Information
+                    Technology, 14, pp. 1117–1130.<br>
+                    • Cifuentes, C. and Bierman, G. (2019) ‘What is a Secure Programming Language?’
+                    SNAPL, 136(3), pp. 1–15.<br>
+                    • Object Management Group (2020) Unified Architecture Framework Domain
+                    Metamodel v1.1.<br><br>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; 2025 copyright all right reserved</p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
+    function myFunction1() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "Read more";
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "Read less";
+        moreText1.style.display = "inline";
+      }
+    }
+
+    function myFunction2() {
+      var dots2 = document.getElementById("dots2");
+      var moreText2 = document.getElementById("more2");
+      var btnText2 = document.getElementById("myBtn2");
+
+      if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText2.innerHTML = "Read more";
+        moreText2.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText2.innerHTML = "Read less";
+        moreText2.style.display = "inline";
+      }
+    }
+  </script>
+</body>
+
+</html>
