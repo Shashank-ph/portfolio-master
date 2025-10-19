@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Shashank | Module 1</title>
+  <meta name="title" content="Shashank | Services">
+  <meta name="description" content="This is a personal portfolio">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/require.css">
+  <link rel="stylesheet" href="../assets/css/pages/service.css">
+
+  <style>
+    #more {
+      display: none;
+    }
+
+    #more1 {
+      display: none;
+    }
+
+    #more2 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="../index.html" class="logo">
+        <img src="../assets/images/SP-logo.png" width="200" height="50"
+          alt="https://www.linkedin.com/in/shashank-phatak-26122b145/">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="label-lg navbar-link has-after active">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../service.html" class="label-lg navbar-link has-after">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../modules.html" class="label-lg navbar-link has-after">Modules</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../portfolio.html" class="label-lg navbar-link has-after">Certificates</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../contact.html" class="label-lg navbar-link has-after">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="../contact.html" class="btn btn-primary">Contact Now</a>
+
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service has-bg-image" aria-labelledby="service-label"
+        style="background-image: url('../assets/images/service-bg.png')">
+        <div class="container">
+
+          <h2 class="section-title headline-md text-center" id="service-label">Executive Summary: Digitalisation Risks
+            and Disaster Recovery Strategy for Cathy’s Business
+          </h2>
+
+          <ul class="service-list">
+
+            <li class="card-container">
+              <div class="card card-md" style="background-color: hsl(178, 30%, 69%)">
+
+                <div>
+
+                  <p class="body-sm">
+
+                    <b>Introduction</b><br>
+                    Cathy’s business is undergoing a transformative digitalisation process, incorporating an
+                    international supply chain and automated warehouses to enhance operational efficiency. This
+                    transformation has attracted high-profile clients such as HRH the King and Prince Albert 2nd of
+                    Monaco, who are concerned about potential risks to product quality and supply chain security. This
+                    executive summary assesses the risks to quality and supply chain availability, proposes a business
+                    continuity and disaster recovery (BCDR) strategy, and provides prioritised recommendations to
+                    mitigate risks while ensuring compliance with security standards, including the General Data
+                    Protection Regulation (GDPR). It addresses the commercial needs of the business, focusing on
+                    maintaining client trust and operational excellence. The recommendations are structured to
+                    prioritise cybersecurity and quality, meeting the expectations of high-profile stakeholders.
+
+                    <br><br>
+                    <span id="dots"></span>
+                    <span id="more">
+
+                      <b>1. Potential Risks to Quality and Supply Chain</b><br>
+                      <b>Risk Identification: </b> The digitalisation process introduces several risks to product
+                      quality and supply chain
+                      availability, which could impact the business’s reputation and operations (Brandon-Jones, 2019).
+                      These include:<br>
+                      <b>• Quality Risks:</b><br>
+                      o Inconsistent Supplier Standards: International suppliers may not meet Cathy’s stringent quality
+                      requirements, risking defective products (Chopra and Meindl, 2016).<br>
+                      o Automation Errors: Automated warehouse systems introduce errors in inventory or product handling
+                      (Rushton et al., 2022).<br>
+                      o Data Integrity Issues: Digital quality control systems are vulnerable to cyberattacks,
+                      potentially compromising traceability (Verizon, 2025).<br>
+                      <b>• Supply Chain Risks:</b><br>
+                      o Logistical Delays: Global supply chains face delays due to customs, transport disruptions, or
+                      geopolitical factors (Christopher, 2016).<br>
+                      o Cybersecurity Threats: Digital supply chain systems are at risk of ransomware or data breaches
+                      (National Institute of Standards and Technology, 2024).<br>
+                      o Vendor Dependency: Over-reliance on specific suppliers or technology vendors may cause
+                      bottlenecks (Monczka et al., 2015).<br>
+                      o Natural Disasters: Automated warehouses in diverse locations are exposed to regional risks, such
+                      as earthquakes (Chopra and Meindl, 2016).<br>
+                      These risks are critical as they could erode client confidence, particularly for high-profile
+                      customers. Effective mitigation is essential to maintain Cathy’s reputation for quality and
+                      reliability (Brandon-Jones, 2019).<br>
+                      <b>Quantitative Risk Modelling Approach</b><br>
+                      A Monte Carlo Simulation was selected for risk analysis due to its ability to model complex
+                      systems with multiple variables and uncertainties (Chapman and Ward, 2003). This method simulates
+                      thousands of scenarios to estimate risk probabilities, making it ideal for assessing dynamic
+                      global supply chains (Bara, 2025). It was chosen over predictive models for its robustness in
+                      handling uncertainty and providing confidence intervals (Hubbard, 2020).<br>
+                      <b>Assumptions and Data Sources</b><br>
+                      <b>• Assumptions:</b><br>
+                      o Supplier defect rate: 5%, based on industry benchmarks for international supply chains (Jawad
+                      and Villányi, 2025).<br>
+                      o Automation error rate: 2%, due to initial system integration challenges (Dekhne et al.,
+                      2019).<br>
+                      o Cybersecurity breach probability: 10% annually, derived from e-commerce industry data (Verizon,
+                      2025).<br>
+                      o Logistical delay probability: 15%, based on global trade data (World Trade Organization,
+                      2024).<br>
+                      <b>• Data Sources to support the assumptions can be drawn from:</b><br>
+                      o Industry reports for risk probabilities (Dekhne et al., 2019; Verizon, 2025).<br>
+                      o Cathy’s historical quality metrics for baseline data.<br>
+                      o GDPR guidelines for data security compliance (Ducato, 2020).<br>
+                      <b>Calculations and Results</b><br>
+                      The Monte Carlo Simulation, executed with 10,000 iterations, provided probabilistic estimates for
+                      risks to product quality and supply chain availability. The simulation used Python’s NumPy
+                      library, modelling input variables as probability distributions to capture variability.
+                      Sensitivity analysis validated the results, ensuring reliability for decision-making (Hubbard,
+                      2020). The following probabilities were calculated:<br>
+                      <b>• Quality Risks:</b><br>
+                      o Probability of quality degradation due to supplier issues: 12% (95% Confidence Interval (CI):
+                      10-14%).<br>
+                      o Probability of automation-related defects: 8% (95% CI: 6-10%).<br>
+                      o Combined probability of quality issues: 18% (due to overlapping risks).<br>
+                      <b>• Supply Chain Risks:</b><br>
+                      o Probability of logistical delays: 15% (95% CI: 13-17%).<br>
+                      o Probability of cybersecurity breach disrupting supply chain: 10% (95% CI: 8-12%).<br>
+                      o Probability of vendor dependency issues: 7% (95% CI: 5-9%).<br>
+                      o Combined probability of supply chain disruption: 25% (95% CI: 22-28%).<br>
+                      <b>Summary of Results and Recommendations</b><br>
+                      <b>• Quality Risk Mitigation:</b><br>
+                      o Supplier Audits: Implement ISO 9001-compliant quality audits to reduce defect probability to 5%
+                      (Brachnata and Wening, 2021).<br>
+                      o Automation Testing: Conduct pre-deployment testing of warehouse systems to lower error
+                      rates.<br>
+                      o Data Validation: Use blockchain-based traceability to mitigate data integrity risks (Mohan et
+                      al., 2024).<br>
+                      o Post-Mitigation Probability: Reduces combined quality risk to 10%.<br>
+                      <b>• Supply Chain Risk Mitigation:</b><br>
+                      o Diversified Suppliers: Engage multiple suppliers to reduce dependency risk to 3% (Monczka et
+                      al., 2015).<br>
+                      o Cybersecurity Framework: Adopt the NIST Cybersecurity Framework to lower breach probability to
+                      5% (National Institute of Standards and Technology, 2024).<br>
+                      o Logistics Contingency: Partner with multiple logistics providers to reduce delay probability to
+                      8% (Rushton et al., 2022).<br>
+                      o Post-Mitigation Probability: Reduces combined supply chain risk to 15%.<br>
+                      <b>• Prioritisation:</b><br>
+                      1. Cybersecurity: Critical for GDPR compliance and client trust. It addresses the concerns of
+                      high-profile clients about data security (Ducato, 2020).<br>
+
+                      2. Supplier Quality: Essential for maintaining brand reputation. Audits ensure consistency across
+                      international suppliers (Chopra and Meindl, 2016).<br>
+
+                      3. Logistics Reliability: Key to ensuring product availability (Christopher, 2016).<br><br>
+
+
+                      <b>2. Business Continuity Planning (BCP) and Disaster Recovery (DR) Strategy</b><br>
+
+                      <b>Requirements</b><br>
+                      Ms O’Dour requires a DR solution ensuring 24/7/365 online shop availability, with a changeover
+                      window of less than 1 minute (Recovery Time Objective, RTO) and data loss limited to 1 minute
+                      (Recovery Point Objective, RPO). The solution must address vendor lock-in and comply with GDPR
+                      (Demin, 2020; Ducato, 2020).<br>
+
+                      <b>Proposed DR Solution</b><br>
+                      • Architecture: A multi-cloud, active-active DR strategy using Amazon Web Services (AWS) and
+                      Microsoft Azure to ensure redundancy and mitigate vendor lock-in (Mankotia, 2024).<br>
+
+                      <b>• Components:</b><br>
+                      o Real-Time Data Replication: Use Amazon RDS Global or Azure Cosmos DB for data synchronisation,
+                      achieving RPO < 1 minute. <br>
+                        o Automated Failover: Deploy AWS Route 53 or Azure Traffic Manager for
+                        DNS failover, achieving RTO < 1 minute. <br>
+                          o GDPR Compliance: Encrypt data using AES-256 and
+                          conduct regular audits. <br>
+                          o Backup and Testing: Perform daily backups and quarterly data recovery
+                          drills. <br>
+                          <b>• Platform Recommendation:</b> Use AWS as the primary provider for its global
+                          infrastructure
+                          and Azure as the secondary provider or vice versa to avoid lock-in. Both support
+                          containerisation (e.g., Kubernetes) for portability (Kumar et al.,2025). <br>
+                          <b>• Vendor Lock-In Mitigation:</b><br>
+                          o Use open-source tools (e.g., Kubernetes, PostgreSQL) for portability (Reznik et
+                          al., 2020). <br>
+                          o Negotiate contracts with clear exit strategies (Mankotia, 2024). <br>
+                          o Maintain in-house multi-cloud expertise (Hezso, 2024).<br>
+                          <b>Rationale</b><br>
+                          The multi-cloud strategy ensures high availability (99.99% uptime) and GDPR compliance while
+                          addressing vendor lock-in through
+                          portable technologies (Mankotia, 2024). An active-active configuration meets the stringent RTO
+                          and RPO requirements, ensuring a continuous online presence (Demin, 2020). <br><br>
+
+                          <b>3. Compliance with Security Standards</b> <br>
+                          • GDPR Compliance: Implement data encryption, user consent mechanisms, and
+                          appoint a Data Protection Officer to meet GDPR requirements (Ducato, 2020). Regular audits
+                          will
+                          ensure ongoing compliance with data protection laws. <br>
+                          • Other Standards: Adhere to ISO 27001 for
+                          information security and PCI DSS for payment processing to ensure comprehensive security
+                          (Brachnata and Wening, 2021; Chippagiri and Ramesh, 2025). These standards protect client data
+                          and maintain trust. <br>
+                          <b>• Mitigations:</b> <br>
+                          o Deploy intrusion detection systems to monitor for cyber
+                          threats. This proactively identifies vulnerabilities in the digital supply chain (National
+                          Institute of Standards and Technology, 2024). <br>
+                          o Conduct regular security training to prevent
+                          human errors. Staff awareness is critical to reducing phishing risks (Sadiq Nasir, 2023). <br>
+                          o Use secure APIs for supply chain integrations to protect data exchanges. This ensures secure
+                          communication across systems (Reznik et al., 2020). <br><br>
+
+                          <b>4. Recommendations in Order of Priority</b><br>
+                          <b>1. Enhance Cybersecurity:</b> Implement the NIST Cybersecurity Framework as well as ISO
+                          27001 standard
+                          to reduce the probability of breaches to 5%, ensuring compliance with GDPR and maintaining
+                          client trust for high-profile customers like HRH the King and Prince Albert 2nd. This includes
+                          deploying intrusion detection systems, regular penetration testing, and staff training to
+                          prevent phishing attacks, which are prevalent in digital supply chains (Verizon, 2025).
+                          Establishing a robust incident response plan will further minimise downtime and data exposure,
+                          aligning with industry best practices (Demin, 2020). This is the top priority due to the legal
+                          and reputational consequences of non-compliance.<br>
+                          <b>2. Supplier Quality Audits:</b> Conduct ISO 9001-compliant audits to reduce supplier defect
+                          risk to 5%, preserving Cathy’s world-famous
+                          product quality (Brachnata and Wening, 2021). This involves creating a supplier scorecard
+                          system
+                          to monitor performance metrics, such as defect rates and delivery times, and enforcing
+                          contractual quality clauses. Regular site visits and third-party certifications will ensure
+                          consistency across the international supply chain and avoid client concerns about quality
+                          degradation (Chopra and Meindl, 2016).<br>
+                          <b>3. Multi-Cloud DR Strategy:</b> Deploy an active-active DR
+                          solution using AWS and Azure to ensure 24/7/365 availability with RTO and RPO of less than 1
+                          minute as seen in Mankotia (2024). This includes real-time data replication and automated
+                          failover mechanisms to minimise disruptions. Using open-source tools like Kubernetes ensures
+                          portability, reducing vendor lock-in risks (Reznik et al., 2020). This strategy supports
+                          continuous operations, critical for high-profile clients.<br>
+                          <b>4. Logistics Diversification:</b> Partner with multiple logistics providers to reduce delay
+                          risk, ensuring reliable product delivery
+                          (Rushton et al., 2022). Implementing real-time tracking systems and contingency contracts will
+                          enhance supply chain resilience (Christopher, 2016). This mitigates risks from geopolitical
+                          disruptions or natural disasters, maintaining availability for global clients.<br>
+                          <b>5. Automation Testing:</b> Conduct rigorous pre-deployment testing of warehouse automation
+                          systems to reduce error
+                          rates. This includes stress-testing of robotics and software under simulated conditions to
+                          identify vulnerabilities (Dekhne et al., 2019). Continuous monitoring post-deployment will
+                          ensure long-term reliability, supporting consistent product quality. <br>
+                          These recommendations are prioritised based on their impact on commercial needs, with
+                          cybersecurity and quality audits
+                          taking precedence due to their direct influence on client trust and regulatory compliance
+                          (Brandon-Jones, 2019). The DR strategy and logistics diversification follow to ensure
+                          operational continuity, while automation testing supports long-term efficiency (Hubbard,
+                          2020).<br><br>
+
+                          <b>Conclusion</b> <br>
+                          The digitalisation of Cathy’s business introduces an 18% probability of quality
+                          issues and a 25% probability of supply chain disruptions, which can be mitigated to 10% and
+                          15%,
+                          respectively, through targeted strategies. The Monte Carlo Simulation provided a robust
+                          framework for quantifying these risks, highlighting the need for proactive measures to address
+                          supplier quality, cybersecurity, and logistics challenges (Chapman and Ward, 2003). The
+                          proposed
+                          mitigations, including ISO 9001 audits and adoption of the NIST Cybersecurity Framework, align
+                          with industry standards and address client concerns about quality and security. The
+                          multi-cloud
+                          DR strategy, leveraging AWS and Azure, ensures 24/7/365 availability with minimal downtime and
+                          data loss, meeting Ms O’Dour’s stringent requirements while mitigating vendor lock-in through
+                          open-source technologies (Mankotia, 2024; Reznik et al., 2020). Compliance with GDPR, ISO
+                          27001, and PCI DSS further strengthens the business’s security posture, which is critical for
+                          maintaining trust with such high-profile clients. By prioritising cybersecurity, supplier
+                          quality, and operational resilience, Cathy’s business can successfully navigate the
+                          digitalisation process, ensuring sustained quality, availability, and regulatory adherence.
+                          These measures position the company to capitalise on new market opportunities while upholding
+                          its reputation for excellence in a competitive global landscape (Brandon-Jones, 2019;
+                          Christopher, 2016). <br><br>
+
+
+                          <b>References</b> <br>
+
+                          Bara, M. (2025) “Enhanced Monte Carlo simulation for project risk
+                          analysis: integrating cost and schedule impacts with time-shifted risks and dependency
+                          modeling,” Applied Operations and Analytics, 1(1), pp. 1–15. Available at:
+                          https://doi.org/10.1080/29966892.2025.2552675. <br><br>
+
+                          Brandon-Jones, A. (ed.) (2019) Operations
+                          Management. 9. Auflage. Harlow: Pearson Education, Limited. <br><br>
+
+                          Brachnata, T. and Wening N. (2021)
+                          The Impact of the Implementation of ISO 9001:2015 on the Quality Management System in Various
+                          Company Sectors. Available from:
+                          https://www.questjournals.org/jrbm/papers/vol9-issue11/Ser-2/C09111722.pdf [Accessed 6th
+                          October
+                          2025]<br><br>
+
+                          Chapman, C.B. and Ward, S. (2003) Project risk management: processes, techniques, and
+                          insights. 2nd ed. Hoboken, NJ: Wiley. <br><br>
+
+                          Chippagiri S. and Ramesh A. (2025) “PCI DSS: A Critical
+                          Analysis of Implementation, Effectiveness, and Legislative Impact in Payment Card Security,”
+                          International Journal of Scientific Research in Computer Science, Engineering and Information
+                          Technology, 11(1), pp. 1258–1266. Available at: https://doi.org/10.32628/CSEIT251112115.
+                          <br><br>
+
+                          Chopra, S. and Meindl, P. (2016) Supply chain management: strategy, planning, and operation.
+                          6. ed.,
+                          global ed. Boston, Mass.: Pearson. <br><br>
+
+                          Christopher, M. (2016) Logistics & supply chain management.
+                          Fifth Edition. Harlow, England : New York: Pearson Education (Always learning). Dekhne, A. et
+                          al. (2019) Automation in logistics: Big opportunity, bigger uncertainty. Available from:
+                          https://www.mckinsey.com/industries/logistics/our-insights/automation-in-logistics-big-opportunity-bigger-uncertainty#/.
+                          [Accessed 8th October 2025] <br><br>
+
+                          Demin, P. (2020) Service continuity management: ITIL 4 Practice
+                          Guide. Available from:
+                          https://www.axelos.com/resource-hub/practice/service-continuity-itil-4-practice-guide
+                          [Accessed
+                          6th October 2025] <br><br>
+
+                          Ducato, R. (2020) “Data protection, scientific research, and the role of
+                          information,” Computer Law & Security Review, 37, p. 105412. Available at:
+                          https://doi.org/10.1016/j.clsr.2020.105412. <br><br>
+
+                          Hezso B. (30th April 2024) Cloud Exit Strategies:
+                          Why and How to Avoid Vendor Lock-in. ISC2. Available from:
+                          https://www.isc2.org/insights/2024/04/cloud-exit-strategies-avoiding-vendor-lock-in [Accessed
+                          8th October 2025] <br><br>
+
+                          Hubbard, D.W. (2020) The Failure of Risk Management: Why It’s Broken and How
+                          to Fix It. 1st ed. Wiley. Available at: https://doi.org/10.1002/9781119521914. <br><br>
+
+                          Jawad, Z. and
+                          Villányi, B. (2025) “Designing Predictive Analytics Frameworks for Supply Chain Quality
+                          Management: A Machine Learning Approach to Defect Rate Optimization,” Platforms, 3(2), p. 6.
+                          Available at: https://doi.org/10.3390/platforms3020006. <br><br>
+
+                          Kumar, M., Kaur, G. and Rana, P.S.
+                          (2025) “Performance, portability, productivity, and security in HPC cloud: a systematic
+                          literature review,” The Journal of Supercomputing, 81(11), p. 1197. Available at:
+                          https://doi.org/10.1007/s11227-025-07685-x. <br><br>
+
+                          Mankotia, A. (2024) “Comparing High Availability and
+                          Disaster Recovery in Multi-Cloud Environments,” International Journal of Computer Trends and
+                          Technology, 72(7), pp. 113–121. Available at:
+                          https://doi.org/10.14445/22312803/IJCTT-V72I7P115.<br><br>
+
+                          Mohan, C.R. et al. (2024) “Blockchain-Based Solutions for Enhancing Data Integrity and
+                          Security,” in 2024 7th International Conference on Contemporary Computing and Informatics
+                          (IC3I). 2024 7th International Conference on Contemporary Computing and Informatics (IC3I),
+                          Greater Noida, India: IEEE, pp. 1416–1420. Available at:
+                          https://doi.org/10.1109/IC3I61595.2024.10828945. <br><br>
+
+                          Monczka, R.M. et al. (2015) Purchasing and
+                          Supply Chain Management. 6th ed. Boston, MA: Cengage Learning. <br><br>
+
+                          National Institute of Standards
+                          and Technology (2024) The NIST Cybersecurity Framework (CSF) 2.0. NIST CSWP 29. Gaithersburg,
+                          MD: National Institute of Standards and Technology, p. NIST CSWP 29. Available at:
+                          https://doi.org/10.6028/NIST.CSWP.29. <br><br>
+
+                          Reznik, P., Dobson, J. and Gienow, M. (2020) Cloud native
+                          transformation: practical patterns for innovation. First edition. Beijing Boston:
+                          O’Reilly.<br><br>
+
+                          Rushton, A., Croucher, P. and Baker, P. (2022) The handbook of logistics and distribution
+                          management: understanding the supply chain. Seventh edition. London ; New York: Kogan
+                          Page.<br><br>
+
+                          Sadiq Nasir, S.N. (2023) “Exploring the Effectiveness of Cybersecurity Training Programs:
+                          Factors, Best Practices, and Future Directions,” Advances in Multidisciplinary and scientific
+                          Research Journal Publication, 2(1), pp. 151–160. Available at:
+                          https://doi.org/10.22624/AIMS/CSEAN-SMART2023P18. <br><br>
+
+                          Verizon (2025) 2025 Data Breach Investigations
+                          Report. Available from:
+                          https://www.verizon.com/business/resources/Tea/reports/2025-dbir-data-breach-investigations-report.pdf?msockid=1f6935d78b7b6a802ccb26d18a1f6b58
+                          [Accessed on 7th October 2025] <br><br>
+
+                          World Trade Organization (2024) World Trade Report 2024. WTO (World Trade Report). Available
+                          at: https://doi.org/10.30875/9789287076717. <br><br>
+                  </p>
+                  </span>
+                  <button onclick="myFunction()" id="myBtn"><b>Read more</b></button>
+
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+      <p class="text-center">&copy; 2025 copyright all right reserved</p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
+    function myFunction1() {
+      var dots1 = document.getElementById("dots1");
+      var moreText1 = document.getElementById("more1");
+      var btnText1 = document.getElementById("myBtn1");
+
+      if (dots1.style.display === "none") {
+        dots1.style.display = "inline";
+        btnText1.innerHTML = "Read more";
+        moreText1.style.display = "none";
+      } else {
+        dots1.style.display = "none";
+        btnText1.innerHTML = "Read less";
+        moreText1.style.display = "inline";
+      }
+    }
+
+    function myFunction2() {
+      var dots2 = document.getElementById("dots2");
+      var moreText2 = document.getElementById("more2");
+      var btnText2 = document.getElementById("myBtn2");
+
+      if (dots2.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText2.innerHTML = "Read more";
+        moreText2.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText2.innerHTML = "Read less";
+        moreText2.style.display = "inline";
+      }
+    }
+  </script>
+</body>
+
+</html>
