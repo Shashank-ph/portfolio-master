@@ -9,11 +9,11 @@
   <br />
   <br />
 
-  <h2 align="center">Annie - Personal Portfolio</h2>
+  <h2 align="center">Shashank's - Personal Portfolio</h2>
 
-  Annie is a fully responsive personal portfolio, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
+  This is a fully responsive personal portfolio, <br />Responsive for all laptop or desktop devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://codewithsadee.github.io/annie/"><strong>➥ Live Demo</strong></a>
+  <a href="https://shashank-ph.github.io/portfolio-master/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
